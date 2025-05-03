@@ -1,0 +1,940 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* body{
+    font-family: 'Times New Roman', Times, serif;
+} */
+:root{
+    --primary-color: #FF6600;
+    --hover-color: #cf5401;
+    --white: #fff;
+    --black: #000;
+    --heading-color:#0B1B35;
+    --content-color: #8A898E;
+    --group-color: #1E0E62;
+    --group-para-color: #15143966;
+    --clint-name-color:#bdbbc5;
+
+
+}
+/*? Same Classes */
+/** btn class */
+.same-btn{
+    padding: 8px 25px;
+    background-color:  var(--primary-color);
+    color: var(--white);
+}
+.same-btn:hover{
+    background-color: var(--hover-color);
+    color:  var(--white);
+}
+.same-btn:active{
+    background-color: var(--hover-color) !important;
+    color:  var(--white) !important;
+}
+/** Sub-heading class */
+.sub-heading p{
+    font-family: Abel;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28.5px;
+    letter-spacing: 45%;
+    text-align: center;
+    color: var(--content-color);
+
+}
+.sub-heading h2{
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 28.5px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--heading-color);
+}
+.sub-heading{
+    margin-bottom: 80px;
+}
+/** Service and Team section  */
+.item-box{
+    height: 450px;
+    width: 352px;
+    display: grid;
+    align-content: start;
+    justify-items: center;
+    text-align:center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-bottom: 40px;
+}
+.item-box img{
+    width: 60px;
+    margin: 30px 0 41px;
+}
+.item-box .video-icon{
+    margin-top: 45px;
+}
+.item-box h3{
+    margin: 0 0 32px 0;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 28.5px;
+}
+.item-box p{
+    margin: 0 41px 18px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28.5px;
+}
+.item-box button{
+    margin: 0 0 26px 0;
+}
+/** Service and Team section end  */
+/* Main Design part */
+/** Header part Start */
+header .logo-link img{
+    width: 80%;
+}
+header .nav-items ul li a , .login-signup button{
+    font-size: 17px;
+    line-height: 28.5px;
+}
+header .nav-items ul li:not(:first-child) a , .login-signup button{
+    font-weight: 500;
+
+}
+.login-signup button:first-child{
+    padding: 8px 25px;
+}
+.login-signup button:first-child:hover{
+    background-color:  var(--primary-color);
+    color: var(--white);
+}
+/** Header part End */
+/** Hero Section Start */
+main{
+    display: grid;
+    place-items: center;
+    height: min-content;
+    overflow: hidden;
+}
+main .hero-section{
+    height: 100%;
+    width: 100%;
+
+}
+/* main .hero-section>div{
+    } */
+    main .hero-section>div:last-child{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+}
+/* Hero Content */
+.hero-content{
+    margin-top: 114px;
+}
+.hero-content h1{
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 70px;
+    color: var(--heading-color);
+}
+.hero-content p{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28.5px;
+    margin-top: 16px;
+    margin-bottom: 60px;
+}
+.hero-btn button:last-child img{
+    width: 40px;
+    margin-left: 10px;
+}
+.hero-btn button:last-child span{
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 8px;
+}
+/* Hero Image */
+.hero-img{
+    margin-top: 45px;
+    position: relative;
+}
+.hero-img::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/Bulp-frame.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 40%;
+    position: absolute;
+    top: 25%;
+    left: 10px;
+    z-index: -1;
+}
+.hero-img::after{
+    content: "";
+    background-image: url(../image/Arrow-Frame.png);
+    background-repeat: no-repeat;
+    background-size: 25% ;
+    background-position: top left;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 74%;
+    top: 12%;
+    transform: rotate(-6deg);
+    transform-origin: top;
+    z-index: -1;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(-6deg);
+    -ms-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    -webkit-transform: rotate(-6deg);
+}
+.img-box{
+    margin-right: 20px;
+}
+.img-box::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/massage-box.png);
+    background-repeat: no-repeat;
+    background-size: 85%;
+    position: absolute;
+    top: 7%;
+    left: -24%;
+    z-index: -1;
+}
+.hero-img img{
+    width: 130%;
+}
+/** Hero Section End */
+/** Service Section Start */
+.service{
+    overflow: hidden;
+}
+.service-item{
+    display: grid;
+}
+/** Service Section End */
+/** Block Section Start */
+.block{
+    height: 380px;
+    box-sizing: border-box;
+    margin-top: 150px;
+    overflow: hidden;
+}
+/* Block Content */
+.block-content{
+    height: 100%;
+    display: grid;
+}
+.block-item-content{
+    height: 100%;
+    display: grid;
+    justify-items: start;
+    align-items: start;
+    align-content: space-between;
+}
+.block-item-content h3{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    color:var(--group-color);
+    margin-top: 18px;
+    margin-bottom: 21px;
+}
+.block-item-content p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--group-para-color);
+    margin-bottom: 70px;
+    margin-top: -10px;
+}
+.block-item-content button{
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--group-color);
+    padding: 10px 30px;
+
+}
+.block-item-content button:hover{
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--white);
+
+}
+/* block Image */
+.block-img{
+    position: relative;
+}
+.block-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.block-img .icon-img{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50% -45%);
+    -webkit-transform: translate(-50% -45%);
+    -moz-transform: translate(-50% -45%);
+    -ms-transform: translate(-50% -45%);
+    -o-transform: translate(-50% -45%);
+}
+.icon-img img{
+    width: 140%;
+    background-image: url(../image/Icon\ -\ Fill.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% 50%;
+}
+/** Block Section End */
+/** Testimonial Section Start  */
+.testimonial{
+    margin-top: 120px;
+    padding: 0 80px ;
+}
+.testimonial-heading{
+    margin-bottom: 80px;
+}
+.testimonial-item{
+    height: 250px;
+}
+.testimonial-item-img img{
+    margin: 36px 30px 0 36px;
+}
+.testimonial-item-content {
+    margin: 35px 25px 0 0;
+}
+.testimonial-item-content .clint-review{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    color: var(--heading-color);
+}
+.testimonial-item-content .clint-name{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--clint-name-color);
+}
+/** Testimonial Section End  */
+/** team Section Start */
+.team{
+    margin-top: 80px;
+}
+.team-heading {
+    margin-bottom: 53px;
+}
+.team-item{
+    display: grid;
+}
+.team-item .item-box{
+    height: 360px;
+    width: 360px;
+    box-shadow: none;
+}
+.team-item .item-box img{
+    width: 120px;
+    height: 120px;
+    margin: 50px 0 28px;
+}
+.team-item .item-box h3{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    color: var(--group-color);
+    margin-bottom: 16px;
+}
+.team-item .item-box p{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--group-para-color);
+    margin-bottom: 35px;
+
+}
+.team-item .social-icon{
+    height: 50px;
+}
+.team-item .social-icon img{
+    width: 30%;
+    margin-top: -35px;
+}
+/** team Section End */
+/** Newsletter Section Start */
+.newsletter{
+    margin-top: 80px;
+}
+.newsletter > .row:not(:first-child) > div{
+    height: 370px;
+}
+.newsletter-img{
+    display: grid;
+    place-items: center;
+}
+.newsletter .newsletter-img img{
+    width: 80%;
+}
+.newsletter-input-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.newsletter-input-box p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28.5px;
+    margin-bottom: 23px;
+    margin-top: 10px;
+}
+.newsletter-input-box form input{
+    margin-bottom: 55px;
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.432);
+
+
+
+}
+/** Newsletter Section End */
+/** Footer Section Start */
+footer{
+    margin-top: 130px;
+    margin-bottom: 100px;
+}
+footer .footer-para{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--group-color);
+}
+.footer-menu ul li a{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--group-color);
+}
+/** Footer Section End */
+
+
+
+/*todo: Media Query */
+@media (max-width: 1200px) {
+    /*Same classes */
+    .sub-heading h2{
+        font-size: 48px;
+        line-height: 28.5px;
+
+    }
+    /* Hero Section */
+    .hero-content{
+        margin-top: 70px;
+    }
+    .hero-content h1{
+        font-size: 60px;
+    }
+    .hero-content p{
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .hero-btn button:last-child span{
+        font-size: 16px;
+    }
+    /* Hero Image*/
+    .hero-img{
+        margin-top: 35px;
+        position: relative;
+    }
+    .hero-img::before{
+        content: "";
+        background-size: 40%;
+        top: 28%;
+        left: 10px;
+    }
+    .hero-img::after{
+        content: "";
+        background-size: 25% ;
+        left: 73%;
+        top: 9%;
+        transform: rotate(-6deg);
+        transform-origin: top;
+        z-index: -1;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(-6deg);
+        -ms-transform: rotate(-6deg);
+        -o-transform: rotate(-6deg);
+        -webkit-transform: rotate(-6deg);
+    }
+    .img-box{
+        margin-right: 20px;
+    }
+    .img-box::before{
+        content: "";
+        background-size: 95%;
+        position: absolute;
+        top: 6%;
+        left: -23%;
+    }
+    .hero-img img{
+        width: 135%;
+    }
+    /** Service & Team Section Start */
+    .item-box{
+        height: 450px;
+        width: 352px;
+    }
+    .item-box img{
+    width: 50px;
+    margin: 30px 0 41px;
+    }
+    .item-box .video-icon{
+    margin-top: 45px;
+    }
+    .item-box h3{
+    margin: 0 0 32px 0;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 28.5px;
+    }
+    .item-box p{
+    margin: 0 41px 18px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28.5px;
+    }
+    .item-box button{
+    margin: 0 0 26px 0;
+    }
+    /** Service & Team Section End */
+    /* Team Section */
+    .team{
+        margin-top: 110px;
+    }
+
+
+}
+@media (max-width: 992px) {
+    /*Same classes */
+    .sub-heading h2{
+        font-size: 44px;
+        line-height: 28.5px;
+
+    }
+    /*? Header Part */
+    .login-signup button:first-child{
+        margin-left: -25px;
+    }
+    /* // Header End */
+    /* ? Hero Section */
+    main{
+        height: min-content;
+        overflow: hidden;
+    }
+    /* Hero Content */
+    .hero-content{
+        margin-top: 20px;
+    }
+    .hero-content h1{
+        font-size: 55px;
+        line-height: 60px;
+    }
+    .hero-content p{
+        font-weight: 500;
+        font-size: 18px;
+        margin-top: 16px;
+        margin-bottom: 32px;
+    }
+    .hero-btn button:last-child span{
+        font-size: 16px;
+    }
+    /* Hero Image */
+    .hero-img{
+        overflow: hidden;
+    }
+    .hero-img img{
+        width: 70%;
+    }
+    .hero-img::before{
+        content: "";
+        background-size: 30%;
+        position: absolute;
+        top: 22%;
+        left: 130px;
+        z-index: -1;
+    }
+    .hero-img::after{
+        content: "";
+        background-size: 25% ;
+        left: 62%;
+        top: 6%;
+    }
+    .img-box{
+        margin-right: -350px;
+    }
+    .img-box::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: 60%;
+        position: absolute;
+        top: -1%;
+        left: 5%;
+    }
+/** Service & Team Section Start */
+    .item-box{
+        height: 400px;
+        width: 352px;
+    }
+    .item-box img{
+    width: 50px;
+    margin: 30px 0 41px;
+    }
+    .item-box .video-icon{
+    margin-top: 45px;
+    }
+    .item-box h3{
+    margin: 0 0 32px 0;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 28.5px;
+    }
+    .item-box p{
+    margin: 0 35px 18px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24.5px;
+    }
+    .item-box button{
+    margin: 0 0 26px 0;
+    }
+    /** Service & Team Section End */
+    /* Team Section */
+    .team{
+        margin-top: 90px;
+    }
+    /** Block Section  */
+    .block{
+        height: min-content;
+    }
+    /** Newsletter Section Start */
+    .newsletter{
+        margin-top: 80px;
+    }
+    .newsletter .newsletter-img img{
+        width: 50%;
+    }
+    /** Newsletter Section End */
+    /** Footer Section Start */
+    footer{
+        margin-top: 130px;
+        margin-bottom: 100px;
+    }
+    /* footer > .row{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    } */
+    /** Footer Section End  */
+}
+@media (max-width: 767px) {
+    /*Same classes */
+    .sub-heading h2{
+        font-size: 40px;
+        line-height: 28.5px;
+
+    }
+    /* Header part */
+    header .logo-link img{
+        width: 75%;
+    }
+    header .nav-items ul li a , .login-signup button{
+        font-size: 16px;
+    }
+    .login-signup button:first-child{
+        margin-left: -25px;
+    }
+    /* // Header End */
+    /* ? Hero Section */
+    main{
+        height: min-content;
+        overflow: hidden;
+    }
+    /* Hero Content */
+    .hero-content{
+        margin-top: 20px;
+    }
+    .hero-content h1{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .hero-content p{
+        font-weight: 500;
+        font-size: 18px;
+        margin-top: 16px;
+        margin-bottom: 32px;
+    }
+    .hero-btn button:last-child span{
+        font-size: 16px;
+    }
+    /* Hero Image */
+    .hero-img{
+        overflow: hidden;
+    }
+    .hero-img img{
+        width: 70%;
+    }
+    .hero-img::before{
+        content: "";
+        background-size: 30%;
+        position: absolute;
+        top: 27%;
+        left: 73px;
+        z-index: -1;
+    }
+    .hero-img::after{
+        content: "";
+        background-size: 25% ;
+        left: 70%;
+        top: 9%;
+    }
+    .img-box{
+        margin-right: -350px;
+    }
+    .img-box::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: 75%;
+        position: absolute;
+        top: 4%;
+        left: -10%;
+    }
+    /* Team Section */
+    .team{
+        margin-top: 80px;
+    }
+    /** Testimonial section */
+    .testimonial{
+        margin-top: 70px;
+        padding: 0 0px ;
+    }
+    .testimonial-heading{
+        margin-bottom: 50px;
+    }
+    .testimonial-item{
+        height: 250px;
+    }
+    .testimonial-item-img img{
+        margin: 15px 20px 0 23px;
+    }
+    .testimonial-item-content {
+        margin: 15px 15px 0 0;
+    }
+    .testimonial-item-content .clint-review{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .testimonial-item-content .clint-name{
+        font-size: 14px;
+        line-height: 26px;
+    }
+    /** Newsletter Section Start */
+    .newsletter .newsletter-img img{
+        width: 60%;
+    }
+    /** Newsletter Section End */
+}
+@media (max-width: 576px) {
+    /*Same classes */
+    .same-btn{
+        font-size: 14px;
+    }
+    .sub-heading{
+        margin-bottom: 60px;
+    }
+    .sub-heading h2{
+        font-size: 35px;
+        line-height: 43.5px;
+    }
+    /*? Header Section */
+    header .logo-link img{
+        width: 70%;
+    }
+    header .nav-items ul li a , .login-signup button{
+        font-size: 16px;
+    }
+    .login-signup button:first-child{
+        margin-left: -25px;
+    }
+    /* // Header End */
+    /* ? Hero Section */
+    main{
+        height: min-content;
+        overflow: hidden;
+    }
+    /* Hero Content */
+    .hero-content{
+        margin-top: 10px;
+    }
+    .hero-content h1{
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .hero-content p{
+        font-weight: 500;
+        font-size: 16px;
+        margin-top: 16px;
+        margin-bottom: 32px;
+    }
+    .hero-btn button:last-child span{
+        font-size: 14px;
+    }
+    /* Hero Image */
+    .hero-img{
+        overflow: hidden;
+    }
+    .hero-img img{
+        width: 50%;
+    }
+    .hero-img::before{
+        content: "";
+        background-size: 30%;
+        position: absolute;
+        top: 24%;
+        left: 90px;
+        z-index: -1;
+    }
+    .hero-img::after{
+        content: "";
+        background-size: 25% ;
+        left: 60%;
+        top: 6%;
+    }
+    .img-box{
+        margin-right: -450px;
+    }
+    .img-box::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: 50%;
+        position: absolute;
+        top: 10%;
+        left: 6%;
+    }
+    /* Team Section */
+    .team{
+        margin-top: 70px;
+    }
+    /** block Section */
+    .block{
+        margin-top: 50px;
+    }
+    /** Testimonial section */
+    .testimonial{
+        margin-top: 70px;
+        padding: 0 0px ;
+    }
+    .testimonial-heading{
+        margin-bottom: 50px;
+    }
+    .testimonial-item{
+        height: 250px;
+    }
+    .testimonial-item-img img{
+        margin: 15px 20px 0 23px;
+    }
+    .testimonial-item-content {
+        margin: 15px 15px 0 0;
+    }
+    .testimonial-item-content .clint-review{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .testimonial-item-content .clint-name{
+        font-size: 14px;
+        line-height: 26px;
+    }
+    /** Newsletter Section Start */
+    .newsletter .newsletter-img img{
+        width: 70%;
+    }
+    /** Newsletter Section End */
+}
+@media (max-width: 400px) {
+    /* ? Hero Section */
+    /* Hero Content */
+    .hero-content h1{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .hero-content p{
+        font-weight: 500;
+        font-size: 16px;
+        margin-top: 16px;
+        margin-bottom: 25px;
+    }
+    /* Hero Image */
+    .hero-img::before{
+        content: "";
+        position: absolute;
+        top: 24%;
+        left: 40px;
+    }
+    .hero-img::after{
+        content: "";
+        background-size: 25% ;
+        left: 70%;
+        top: 8%;
+    }
+    .img-box{
+        margin-right: -450px;
+    }
+    .img-box::before{
+        content: "";
+        background-size: 60%;
+        position: absolute;
+        top: 14%;
+        left: -4%;
+    }
+    /* Team Section */
+    .team{
+        margin-top: 70px;
+    }
+}
